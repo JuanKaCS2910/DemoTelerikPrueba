@@ -1,0 +1,35 @@
+﻿/*.save-menu .show
+{
+    left: 10px;
+}
+
+div.dropdown-menu.save-menu.show {
+    left:20px;
+}*/
+
+/*.save-menu {
+    background-color: yellow;
+    will-change: top, left;
+    top: 35px;
+    left: 15px;
+}*/
+
+.save-menu-icon {
+    padding: 5px 5px 5px 5px;
+}
+
+.save-icon {
+    padding: 0px 12px 0px 12px;
+}
+
+.panel-tag-override {
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: #868e96;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 0.875rem;
+    border-radius: 3px 3px 3px 3px;
+    font-weight: bold;
+    color: white;
+}

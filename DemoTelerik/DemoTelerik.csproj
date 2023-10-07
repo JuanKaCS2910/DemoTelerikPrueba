@@ -22,9 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Modules\Extensions\" />
-    <Folder Include="Modules\Injection\" />
-    <Folder Include="Modules\Mapper\" />
+    <ProjectReference Include="..\DemoTelerik.Infraestructura.Data\DemoTelerik.Infraestructura.Data.csproj" />
+    <ProjectReference Include="..\DemoTelerik.Transversal.Mapper\DemoTelerik.Transversal.Mapper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="wwwroot\Content\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\Scripts\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties UseCdnSupport="" /></VisualStudio></ProjectExtensions>

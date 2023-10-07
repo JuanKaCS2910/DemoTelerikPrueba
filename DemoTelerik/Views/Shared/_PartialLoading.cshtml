@@ -1,0 +1,91 @@
+﻿@using DemoTelerik.Resources;
+
+<style>
+    .progress-bar {
+        background-color: #12AFCB !important;
+    }
+</style>
+<div class="modal fade js-loading-bar" id="ModalLoadingGeneral" style="padding-top: 0%; ">
+    <div class="modal-dialog">
+        @*<div class="modal-content">
+            <div class="modal-header"><h3 style="margin:0;">@Resource_DEFG.EsperePorFavor...</h3></div>
+            <div class="modal-body">
+                <div class="progress progress-popup" style="position: relative; top: 10px; ">
+                    <div class="progress-bar progress-bar-striped active progress-bar-animated" role="progressbar" style="width: 100%; ">
+                        Cargando
+                    </div>
+                </div>
+            </div>
+        </div>*@
+        
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            @*<div class="spinner-grow rounded-0 text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>*@
+
+
+            @*<button class="btn btn-info" type="button" >
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Cargando...
+        </button>*@
+        </div>
+    </div>
+</div>
+
+<div id="miRender"></div>
+
+<script>
+
+    window.addEventListener("beforeunload", function (event) {
+        $(document).keydown(function (e) {
+            event.cancelBubble = true;
+            e.preventDefault();
+        });
+
+        var informe = $("#informe");
+        if (informe == undefined) {
+            var $modal = $('.js-loading-bar'),
+                $bar = $modal.find('.progress-bar');
+
+            $modal.modal({
+                show: true,
+                backdrop: 'static',
+                keyboard: true
+            });
+            $bar.addClass('animate');
+        }
+    });
+
+    function abrirModal() {
+        var $modal = $('.js-loading-bar'),
+            $bar = $modal.find('.progress-bar');
+
+        $modal.modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        });
+        $bar.addClass('animate');
+        $('script').last().remove();
+
+    }
+
+    function cerrarModal() {
+        var $modal = $('.js-loading-bar'),
+            $bar = $modal.find('.progress-bar');
+
+        $bar.removeClass('animate');
+        $modal.modal('hide');
+
+    }
+
+    function cerrarModalPendiente() {
+        setTimeout(function () {
+            cerrarModal();
+        }, 2000);
+    }
+</script>

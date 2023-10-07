@@ -1,0 +1,120 @@
+﻿@*@using ImaSoftRHWebApp.Resources;*@
+@using DemoTelerik.Resources;
+@model DemoTelerik.Models.LogOnViewModel;
+@{
+    ViewBag.Title = "LogIn";
+    Layout = "~/Views/Shared/_LoginTemplate.cshtml";
+
+}
+
+<div class="col-md-4">
+</div>
+<div class="col-sm-4 col-md-4 col-xl-4">
+    <div align="center">
+        <img src="~/img/Logo/Logo_transparente_ImasoftRH_blanco.png" style="height: 100px;width:288px;" />
+    </div>
+    <div>
+        <form id="formEntrarLogin" method="post">
+
+            <input type="hidden" name="ReturnUrl" value="@ViewBag.ret" />
+            <input type="hidden" id="tz" name="tz" value="0" />
+
+            @*<div asp-validation-summary="All" class="alert alert-primary text-dark"></div>*@
+            <div class="form-group">
+                <input type="email" name="UserName" id="login" class="form-control" placeholder="@Resource_QRSTU.Usuario" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" name="Password" autocomplete="off" placeholder="@Resource_ABC.Contrasena" required>
+                <div class="show-eye"><i class="fa fa-eye" id="faeye"></i></div>
+                <div class="show-eye-slash"><i class="fa fa-eye-slash" id="faeyeslash"></i></div>
+            </div>
+            <button id="btnEntrarLogin" type="button" class="btn btn-primary block full-width m-b" style="background-color: #dc0c0c; border-color: #dc0c0c;">
+                @Resource_HIJKLM.IniciarSesion
+            </button>
+
+            <div align="center" style="padding-top:15px;">
+
+                <a href="/Account/Password"><small>@Resource_NOP.OlvidasteTuContrasena</small></a>
+            </div>
+        </form>
+    </div>
+
+    @if (Model.Opcion == 0)
+    {
+        <div class="form-group login-box">
+            <div class='alert alert-info'>@Resource_QRSTU.SeHaEnviandoUnEnlaceCorrectamenteATuCorreo</div>
+        </div>
+    }
+    else if (Model.Opcion == 1)
+    {
+        <div class="form-group login-box">
+            <div class='alert alert-info'>@Resource_QRSTU.SeHaCambiadoLaContrasena</div>
+        </div>
+    }
+    else if (Model.Opcion == 2)
+    {
+        <div class="form-group login-box">
+            <div class='alert alert-danger'>@Resource_QRSTU.UsuarioOContrasenaIncorrectas</div>
+        </div>
+    }
+    else if (Model.Opcion == 3)
+    {
+        <div class="form-group login-box" style="color: green;">
+            <div class='alert alert-danger'>@Resource_QRSTU.UsuarioNoExisteOSeEncuentraBloqueado</div>
+        </div>
+    }
+    else if (Model.Opcion == 4)
+    {
+        <div class="form-group login-box" style="color: green;">
+            <div class='alert alert-danger'>@Resource_HIJKLM.LicenciaIncorrecta</div>
+        </div>
+    }
+
+</div>
+<div class="col-md-4">
+</div>
+<script>
+    $("#btnEntrarLogin").click(function () {
+        if ($("#login").val() == "" || $("#login").val() == null) {
+            bootbox.alert({
+                title: "<i class='fal fa-times-circle text-danger mr-2'></i> <span class='text-danger fw-500'>@Resource_DEFG.Error</span>",
+                message: "<span><strong>@Resource_HIJKLM.IngresarElUsuario</strong></span>",
+                centerVertical: true,
+                className: "modal-alert",
+                closeButton: false
+            });
+            return false;
+        }
+
+        if ($("#password").val() == "" || $("#password").val() == null) {
+            bootbox.alert({
+                title: "<i class='fal fa-times-circle text-danger mr-2'></i> <span class='text-danger fw-500'>@Resource_DEFG.Error</span>",
+                message: "<span><strong>@Resource_HIJKLM.IngresarLaContrasena</strong></span>",
+                centerVertical: true,
+                className: "modal-alert",
+                closeButton: false
+            });
+            return false;
+        }
+
+        $("#formEntrarLogin").submit();
+        abrirModal();
+
+    });
+
+    (function () {
+        sessionStorage.setItem("imagenPerfil", null);
+        sessionStorage.removeItem('imagenPerfil');
+        sessionStorage.clear();
+        localStorage.clear();
+        var offset = new Date().getTimezoneOffset();
+        $("#tz").val(offset);
+    })();
+
+    $(this).keypress(function (ev) {
+        var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+        if (keycode == '13') {
+            $("#btnEntrarLogin").trigger("click");
+        }
+    });
+</script>

@@ -1,0 +1,104 @@
+﻿/* Login */
+
+.page-login #main-wrapper,
+.page-register #main-wrapper,
+.page-forgot #main-wrapper,
+.page-lock-screen #main-wrapper {
+    margin: 5%;
+}
+
+.login-box {
+    margin: auto;
+    max-width: 400px;
+}
+
+    .login-box .logo-name {
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #6c6c6c;
+    }
+
+    .login-box .user-box {
+        display: block;
+        clear: both;
+        overflow: hidden;
+    }
+
+        .login-box .user-box img {
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .login-box .user-box form {
+            overflow: hidden;
+        }
+
+
+/* Login alt */
+
+.login-alt .login-box {
+    max-width: 100%;
+}
+
+/* Width & Height */
+
+
+.full-height {
+    height: 100% !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.w-xxs {
+    width: 50px;
+}
+
+.w-xs {
+    width: 90px;
+}
+
+.w-sm {
+    width: 140px;
+}
+
+.w {
+    width: 200px;
+}
+
+.w-md {
+    width: 240px;
+}
+
+.w-lg {
+    width: 280px;
+}
+
+.w-xl {
+    width: 330px;
+}
+
+.w-xxl {
+    width: 370px;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.btn.disabled,
+.btn:disabled {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.25;
+    pointer-events: none;
+}
+

@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NoSePudoActualizar" xml:space="preserve">
+    <value>Could not update.</value>
+  </data>
+  <data name="NoSePudoEliminar" xml:space="preserve">
+    <value>It could not be deleted.</value>
+  </data>
+  <data name="NoSePudoRegistrar" xml:space="preserve">
+    <value>Could not register.</value>
+  </data>
+  <data name="NuevaContrasena" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="OlvidasteTuContrasena" xml:space="preserve">
+    <value>Did you forget your password?</value>
+  </data>
+  <data name="Pais" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Provincia" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="NumeroDias" xml:space="preserve">
+    <value>Days number</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Not</value>
+  </data>
+  <data name="PermitirVacacionesNegativas" xml:space="preserve">
+    <value>Allow Negative Holidays</value>
+  </data>
+  <data name="NombreGerenteGeneral" xml:space="preserve">
+    <value>General Manager Name</value>
+  </data>
+  <data name="NombreRepresentanteLegal" xml:space="preserve">
+    <value>Name Legal Representative</value>
+  </data>
+  <data name="NroDocGerenteGeneral" xml:space="preserve">
+    <value>No. Doc. General Manager</value>
+  </data>
+  <data name="NroDocRepresentanteLegal" xml:space="preserve">
+    <value>No. Doc. Legal Representative</value>
+  </data>
+  <data name="NumeroLicenciaMunicipio" xml:space="preserve">
+    <value>Municipality License Number</value>
+  </data>
+  <data name="NumeroRegistroPublico" xml:space="preserve">
+    <value>Public Registry Number</value>
+  </data>
+  <data name="OtrosDatos" xml:space="preserve">
+    <value>Other data</value>
+  </data>
+  <data name="NombreCorto" xml:space="preserve">
+    <value>Short name</value>
+  </data>
+  <data name="NumeroRuc" xml:space="preserve">
+    <value>Ruc number</value>
+  </data>
+  <data name="OtrasOpciones" xml:space="preserve">
+    <value>Other options</value>
+  </data>
+  <data name="Orden" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="NoCumpleContraseña" xml:space="preserve">
+    <value>It does not meet the password requirements.</value>
+  </data>
+  <data name="Puerto" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="NoSePudoRegistrarPorqueYaExiste" xml:space="preserve">
+    <value>Could not register because it already exists.</value>
+  </data>
+  <data name="ParametrosGenerales" xml:space="preserve">
+    <value>General Parameters</value>
+  </data>
+  <data name="PermisoMenuCampo" xml:space="preserve">
+    <value>Field Menu Permission</value>
+  </data>
+  <data name="PlantillaCorreo" xml:space="preserve">
+    <value>Mail template</value>
+  </data>
+  <data name="Pagar" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="Periodos" xml:space="preserve">
+    <value>Periods</value>
+  </data>
+  <data name="NombreArea" xml:space="preserve">
+    <value>Name Area</value>
+  </data>
+  <data name="NombreDepartamento" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="NombrePlanilla" xml:space="preserve">
+    <value>Payroll Name</value>
+  </data>
+  <data name="NombrePuesto" xml:space="preserve">
+    <value>Name Position</value>
+  </data>
+  <data name="NombreSeccion" xml:space="preserve">
+    <value>Section Name</value>
+  </data>
+  <data name="NroDocumento" xml:space="preserve">
+    <value>Document No.</value>
+  </data>
+  <data name="NoSePudoDarDeBaja" xml:space="preserve">
+    <value>Could not unsubscribe.</value>
+  </data>
+  <data name="NroAFP" xml:space="preserve">
+    <value>No. AFP</value>
+  </data>
+  <data name="NombrePermisoSalud" xml:space="preserve">
+    <value>Name Health Permit</value>
+  </data>
+  <data name="NroPermisoSalud" xml:space="preserve">
+    <value>No. Health Permit</value>
+  </data>
+  <data name="NumeroSueldos" xml:space="preserve">
+    <value>Number Salaries</value>
+  </data>
+  <data name="NumeroCuentaSueldo" xml:space="preserve">
+    <value>Salary Account Number</value>
+  </data>
+  <data name="NumeroCuentaSueldoCTS" xml:space="preserve">
+    <value>CTS Salary Account Number</value>
+  </data>
+  <data name="PrimerApellido" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="NroDocumentoIdentidad" xml:space="preserve">
+    <value>Identity Document Number</value>
+  </data>
+  <data name="Nacionalidad1" xml:space="preserve">
+    <value>Nationality 1</value>
+  </data>
+  <data name="Nacionalidad2" xml:space="preserve">
+    <value>Nationality 2</value>
+  </data>
+  <data name="PaisNacimiento" xml:space="preserve">
+    <value>Country of birth</value>
+  </data>
+  <data name="PaisResidencia" xml:space="preserve">
+    <value>Country Residence</value>
+  </data>
+  <data name="Nit" xml:space="preserve">
+    <value>Nit</value>
+  </data>
+  <data name="Observaciones" xml:space="preserve">
+    <value>Observations</value>
+  </data>
+  <data name="Puestos" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="PuestoPadre" xml:space="preserve">
+    <value>Position Father</value>
+  </data>
+  <data name="NumeroPlazas" xml:space="preserve">
+    <value>Number of places</value>
+  </data>
+  <data name="NoSePudoCambiarDePuesto" xml:space="preserve">
+    <value>Could not change position</value>
+  </data>
+  <data name="Nacionalidad" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="NoSePudoCambiarDeContrato" xml:space="preserve">
+    <value>Could not change contract</value>
+  </data>
+  <data name="NoSePudoCambiarDeSalario" xml:space="preserve">
+    <value>Could not change salary</value>
+  </data>
+  <data name="NoSePudoCambiarDeEstructura" xml:space="preserve">
+    <value>Could not change structure</value>
+  </data>
+  <data name="Prevista" xml:space="preserve">
+    <value>Foreseen</value>
+  </data>
+  <data name="ObservacionFinal" xml:space="preserve">
+    <value>End Observation</value>
+  </data>
+  <data name="ObservacionInicio" xml:space="preserve">
+    <value>Start Observation</value>
+  </data>
+  <data name="Procedimiento" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="NuevoFlujoDeAprobacion" xml:space="preserve">
+    <value>New Approval Flow</value>
+  </data>
+  <data name="NombreDelFlujo" xml:space="preserve">
+    <value>Flow Name</value>
+  </data>
+  <data name="PasosDeAprobacion" xml:space="preserve">
+    <value>Approval Steps</value>
+  </data>
+  <data name="Paso" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="NumeroMinimoAprobadores" xml:space="preserve">
+    <value>Minimum Number of Approvers</value>
+  </data>
+  <data name="PasoSiguienteAprobacion" xml:space="preserve">
+    <value>Next Step Approval</value>
+  </data>
+  <data name="PasoSiguienteDesaprobacion" xml:space="preserve">
+    <value>Next Step Disapproval</value>
+  </data>
+  <data name="NuevoFlujo" xml:space="preserve">
+    <value>New Flow</value>
+  </data>
+  <data name="NoAplica" xml:space="preserve">
+    <value>Does not apply</value>
+  </data>
+  <data name="NoSePudoActivar" xml:space="preserve">
+    <value>Could not activate</value>
+  </data>
+  <data name="NoSePudoInactivar" xml:space="preserve">
+    <value>Could not be inactivated</value>
+  </data>
+  <data name="Planilla" xml:space="preserve">
+    <value>Payroll</value>
+  </data>
+  <data name="PermisoInformacion" xml:space="preserve">
+    <value>Permission Information</value>
+  </data>
+  <data name="PoliticaSolicitud" xml:space="preserve">
+    <value>Request Policy</value>
+  </data>
+  <data name="Oscuro" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="NombreDelFormulario" xml:space="preserve">
+    <value>Form Name</value>
+  </data>
+  <data name="Obligatorio" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="NuevoFormulario" xml:space="preserve">
+    <value>New Form</value>
+  </data>
+  <data name="NuevasSolicitudes" xml:space="preserve">
+    <value>New Requests</value>
+  </data>
+  <data name="NivelPuesto" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
+  <data name="OtrasConfiguraciones" xml:space="preserve">
+    <value>Other Settings</value>
+  </data>
+  <data name="Numero" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="OrigenVacaciones" xml:space="preserve">
+    <value>Origin of vacations</value>
+  </data>
+  <data name="OrigenAdicional" xml:space="preserve">
+    <value>Additional Origin</value>
+  </data>
+</root>

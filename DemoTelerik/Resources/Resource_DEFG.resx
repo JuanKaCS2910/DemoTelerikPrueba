@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DatoRequerido" xml:space="preserve">
+    <value>Dato requerido</value>
+  </data>
+  <data name="DatosAcademicos" xml:space="preserve">
+    <value>Datos Académicos</value>
+  </data>
+  <data name="DatosEmpresa" xml:space="preserve">
+    <value>Datos Empresa</value>
+  </data>
+  <data name="DatosFamiliares" xml:space="preserve">
+    <value>Datos Familiares</value>
+  </data>
+  <data name="DatosFinancieros" xml:space="preserve">
+    <value>Datos Financieros</value>
+  </data>
+  <data name="DatosPersonales" xml:space="preserve">
+    <value>Datos Personales</value>
+  </data>
+  <data name="DatosPrincipales" xml:space="preserve">
+    <value>Datos Principales</value>
+  </data>
+  <data name="DatosPuesto" xml:space="preserve">
+    <value>Datos Puesto</value>
+  </data>
+  <data name="Departamento" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="Descanso" xml:space="preserve">
+    <value>Descanso</value>
+  </data>
+  <data name="Descargar" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="Descripcion" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DescripcionCese" xml:space="preserve">
+    <value>Descripción Cese</value>
+  </data>
+  <data name="DiaFinalDelMes" xml:space="preserve">
+    <value>Día Final del Mes</value>
+  </data>
+  <data name="DiaInicialDelMes" xml:space="preserve">
+    <value>Día Inicial del Mes</value>
+  </data>
+  <data name="Dias" xml:space="preserve">
+    <value>Días</value>
+  </data>
+  <data name="DiasAntelacion" xml:space="preserve">
+    <value>Días Antelación</value>
+  </data>
+  <data name="DiasDerechoVacacional" xml:space="preserve">
+    <value>Días Derecho Vacacional</value>
+  </data>
+  <data name="DiasMaximoAAprobar" xml:space="preserve">
+    <value>Días Máximo a Aprobar</value>
+  </data>
+  <data name="DiasMaximoASolicitar" xml:space="preserve">
+    <value>Días Máximo a Solicitar</value>
+  </data>
+  <data name="DiasMinimoAAprobar" xml:space="preserve">
+    <value>Días Mínimo a Aprobar</value>
+  </data>
+  <data name="DiasMinimoASolicitar" xml:space="preserve">
+    <value>Días Mínimo a Solicitar</value>
+  </data>
+  <data name="DiasPlazoAprobacion" xml:space="preserve">
+    <value>Días Plazo Aprobación</value>
+  </data>
+  <data name="Direccion" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="DireccionWeb" xml:space="preserve">
+    <value>Dirección Web</value>
+  </data>
+  <data name="DocumentoElectronicos" xml:space="preserve">
+    <value>Documentos Electrónicos</value>
+  </data>
+  <data name="Edad" xml:space="preserve">
+    <value>Edad</value>
+  </data>
+  <data name="EdicionConfiguracionPassword" xml:space="preserve">
+    <value>Edición Configuración Password</value>
+  </data>
+  <data name="EdicionConfiguracionSmtp" xml:space="preserve">
+    <value>Edición Configuración Smtp</value>
+  </data>
+  <data name="EdicionEmpresa" xml:space="preserve">
+    <value>Edición Empresa</value>
+  </data>
+  <data name="EdicionEntidadFinanciera" xml:space="preserve">
+    <value>Edición Entidad Financiera</value>
+  </data>
+  <data name="Eliminar" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="ElUsuarioNoPuedeEstarAusentePorqueEstaConfirguradoComoReemplazante" xml:space="preserve">
+    <value>El usuario {0} no puede estar ausente para las fechas ingresadas porque está confirgurado como reemplazante</value>
+  </data>
+  <data name="ElUsuarioSeEncuentraAusenteNoPuedeSerReemplazante" xml:space="preserve">
+    <value>El usuario {0} se encuentra ausente para las fechas ingresadas, no puede ser reemplazante</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailExiste" xml:space="preserve">
+    <value>Email existe</value>
+  </data>
+  <data name="Empleado" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="Empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="EmpresaSeEncuentraConfigurado" xml:space="preserve">
+    <value>Empresa {0} ya se encuentra configurado</value>
+  </data>
+  <data name="EnlaceInvalidoProbablementePorqueYaFueUsado" xml:space="preserve">
+    <value>El enlace es inválido, probablemente porque ya fue usado, por favor haz un nuevo cambio de contraseña.</value>
+  </data>
+  <data name="EntidadEmpresa" xml:space="preserve">
+    <value>Entidad Empresa</value>
+  </data>
+  <data name="EntidadFinanciera" xml:space="preserve">
+    <value>Entidad Financiera</value>
+  </data>
+  <data name="EntidadFinancieraCTS" xml:space="preserve">
+    <value>Entidad Financiera CTS</value>
+  </data>
+  <data name="Entrar" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="EnviarCorreo" xml:space="preserve">
+    <value>Enviar Correo</value>
+  </data>
+  <data name="EnviarEmailAlFinalizar" xml:space="preserve">
+    <value>Enviar Email al Finalizar</value>
+  </data>
+  <data name="EnviarEmailAprobador" xml:space="preserve">
+    <value>Enviar Email Aprobador</value>
+  </data>
+  <data name="EnviarEmailSolicitante" xml:space="preserve">
+    <value>Enviar Email Solicitante</value>
+  </data>
+  <data name="EquipoSeguridad" xml:space="preserve">
+    <value>Equipo Seguridad</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error!</value>
+  </data>
+  <data name="ErrorDeConexionInformacionSeEncuentraEnUso" xml:space="preserve">
+    <value>Error de conexión o información se encuentra en uso.</value>
+  </data>
+  <data name="ErrorEnviarEmail" xml:space="preserve">
+    <value>Error al enviar email.</value>
+  </data>
+  <data name="ErrorSeEncuentraEnUso" xml:space="preserve">
+    <value>La información se encuentra en uso.</value>
+  </data>
+  <data name="EsperePorFavor" xml:space="preserve">
+    <value>Espere por favor</value>
+  </data>
+  <data name="Estado" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="EstadoCivil" xml:space="preserve">
+    <value>Estado civil</value>
+  </data>
+  <data name="EstadoEmpleado" xml:space="preserve">
+    <value>Estado Empleado</value>
+  </data>
+  <data name="Estandar" xml:space="preserve">
+    <value>Estándar</value>
+  </data>
+  <data name="EstasAPuntoDeCambiarTuContrasena" xml:space="preserve">
+    <value>Estás a punto de cambiar tu contraseña.</value>
+  </data>
+  <data name="ExcepcionEnFlujo" xml:space="preserve">
+    <value>Excepción en Flujo</value>
+  </data>
+  <data name="ExcepcionEnPasos" xml:space="preserve">
+    <value>Excepción en Pasos</value>
+  </data>
+  <data name="ExisteCruceDeFechasConOtroAusentismoParaElUsuario" xml:space="preserve">
+    <value>Existe cruce de fechas con otro ausentismo para el usuario {0}</value>
+  </data>
+  <data name="ExisteEntidadMarcadaComoPrincipal" xml:space="preserve">
+    <value>Existe la entidad {0} marcada como principal</value>
+  </data>
+  <data name="Exito" xml:space="preserve">
+    <value>Éxito!</value>
+  </data>
+  <data name="FactorCompraMercado" xml:space="preserve">
+    <value>Factor Compra Mercado</value>
+  </data>
+  <data name="FactorCompraOficial" xml:space="preserve">
+    <value>Factor Compra Oficial</value>
+  </data>
+  <data name="FactorVentaMercado" xml:space="preserve">
+    <value>Factor Venta Mercado</value>
+  </data>
+  <data name="FactorVentaOficial" xml:space="preserve">
+    <value>Factor Venta Oficial</value>
+  </data>
+  <data name="Fecha" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="FechaAFP" xml:space="preserve">
+    <value>Fecha AFP</value>
+  </data>
+  <data name="FechaCambio" xml:space="preserve">
+    <value>Fecha de Cambio</value>
+  </data>
+  <data name="FechaCambioPuesto" xml:space="preserve">
+    <value>Fecha Cambio Puesto</value>
+  </data>
+  <data name="FechaCese" xml:space="preserve">
+    <value>Fecha Cese</value>
+  </data>
+  <data name="FechaCorporacion" xml:space="preserve">
+    <value>Fecha Corporación</value>
+  </data>
+  <data name="FechaFinAusentismo" xml:space="preserve">
+    <value>Fecha Fin Ausentismo</value>
+  </data>
+  <data name="FechaFin" xml:space="preserve">
+    <value>Fecha Fin</value>
+  </data>
+  <data name="FechaFinContrato" xml:space="preserve">
+    <value>Fecha Fin Contrato</value>
+  </data>
+  <data name="FechaFinSalario" xml:space="preserve">
+    <value>Fecha Fin Salario</value>
+  </data>
+  <data name="FechaIngreso" xml:space="preserve">
+    <value>Fecha Ingreso</value>
+  </data>
+  <data name="FechaIngresoPuesto" xml:space="preserve">
+    <value>Fecha Ingreso Puesto</value>
+  </data>
+  <data name="FechaInicio" xml:space="preserve">
+    <value>Fecha Inicial</value>
+  </data>
+  <data name="FechaInicioAusentismo" xml:space="preserve">
+    <value>Fecha Inicio Ausentismo</value>
+  </data>
+  <data name="FechaInicioContrato" xml:space="preserve">
+    <value>Fecha Inicio Contrato</value>
+  </data>
+  <data name="FechaInicioNoPuedeSerMayorAFechaFin" xml:space="preserve">
+    <value>Fecha inicio no puede ser mayor a fecha fin</value>
+  </data>
+  <data name="FechaInicioSalario" xml:space="preserve">
+    <value>Fecha Inicio Salario</value>
+  </data>
+  <data name="FechaInscripcion" xml:space="preserve">
+    <value>Fecha Inscripción</value>
+  </data>
+  <data name="FechaMatrimonio" xml:space="preserve">
+    <value>Fecha Matrimonio</value>
+  </data>
+  <data name="FechaNacimiento" xml:space="preserve">
+    <value>Fecha Nacimiento</value>
+  </data>
+  <data name="FechaTermino" xml:space="preserve">
+    <value>Fecha Termino</value>
+  </data>
+  <data name="Festivo" xml:space="preserve">
+    <value>Festivo</value>
+  </data>
+  <data name="FinDescanso" xml:space="preserve">
+    <value>Fin Descanso</value>
+  </data>
+  <data name="FlujoDeAprobacion" xml:space="preserve">
+    <value>Flujo de Aprobación</value>
+  </data>
+  <data name="FlujosAprobacion" xml:space="preserve">
+    <value>Flujos Aprobación</value>
+  </data>
+  <data name="FlujosConfigurados" xml:space="preserve">
+    <value>Flujos Configurados</value>
+  </data>
+  <data name="FlujosNoConfigurados" xml:space="preserve">
+    <value>Flujos No Configurados</value>
+  </data>
+  <data name="FormaPago" xml:space="preserve">
+    <value>Forma de Pago</value>
+  </data>
+  <data name="Formulario" xml:space="preserve">
+    <value>Formulario</value>
+  </data>
+  <data name="ForzarCambio" xml:space="preserve">
+    <value>Forzar Cambio</value>
+  </data>
+  <data name="Foto" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Generar" xml:space="preserve">
+    <value>Generar</value>
+  </data>
+  <data name="Genero" xml:space="preserve">
+    <value>Género</value>
+  </data>
+  <data name="GradoAcademico" xml:space="preserve">
+    <value>Grado Académico</value>
+  </data>
+  <data name="GrupoImaSoftRH" xml:space="preserve">
+    <value>Grupo ImaSoft RH</value>
+  </data>
+  <data name="GrupoSanguineo" xml:space="preserve">
+    <value>Grupo Sanguíneo</value>
+  </data>
+  <data name="Guardar" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="GuardarCerrar" xml:space="preserve">
+    <value>Guardar Cerrar</value>
+  </data>
+  <data name="GuardarInformacion" xml:space="preserve">
+    <value>Guardar Información</value>
+  </data>
+  <data name="GuardarNuevo" xml:space="preserve">
+    <value>Guardar Nuevo</value>
+  </data>
+  <data name="Defecto" xml:space="preserve">
+    <value>Defecto</value>
+  </data>
+  <data name="DatosJuridicos" xml:space="preserve">
+    <value>Datos Jurídicos</value>
+  </data>
+  <data name="FormulariosPersonalizables" xml:space="preserve">
+    <value>Formularios Personalizables</value>
+  </data>
+  <data name="Formularios" xml:space="preserve">
+    <value>Formularios</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="Etiqueta" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="FormulariosNuevos" xml:space="preserve">
+    <value>Formularios Nuevos</value>
+  </data>
+  <data name="DatosAdicionales" xml:space="preserve">
+    <value>Datos Adicionales</value>
+  </data>
+  <data name="EdicionDatos" xml:space="preserve">
+    <value>Edicion de Datos</value>
+  </data>
+  <data name="EmpleadoBaja" xml:space="preserve">
+    <value>Empleado Baja</value>
+  </data>
+  <data name="DocumentoElectronicosOtros" xml:space="preserve">
+    <value>Otros Documentos</value>
+  </data>
+  <data name="Dato" xml:space="preserve">
+    <value>Dato</value>
+  </data>
+  <data name="DiasLaborales" xml:space="preserve">
+    <value>Dias Laborales</value>
+  </data>
+  <data name="Formulacion" xml:space="preserve">
+    <value>Formulación</value>
+  </data>
+  <data name="DebeSelecCfgVaca" xml:space="preserve">
+    <value>Debe de seleccionar la configuración de vacaciones</value>
+  </data>
+  <data name="EmpleadosAsignados" xml:space="preserve">
+    <value>Empleados asignados</value>
+  </data>
+  <data name="GridNoSeleccion" xml:space="preserve">
+    <value>Debe de seleccionar un registro para guardar</value>
+  </data>
+  <data name="GenerarSolicitud" xml:space="preserve">
+    <value>Generar Solicitud</value>
+  </data>
+  <data name="Generador" xml:space="preserve">
+    <value>Generador</value>
+  </data>
+  <data name="GeneradorReporte" xml:space="preserve">
+    <value>Generador de Reporte</value>
+  </data>
+  <data name="DatosReporte" xml:space="preserve">
+    <value>Datos Reporte</value>
+  </data>
+  <data name="Gestion" xml:space="preserve">
+    <value>Gestión</value>
+  </data>
+  <data name="Detalle" xml:space="preserve">
+    <value>Detalle</value>
+  </data>
+  <data name="Desaprobar" xml:space="preserve">
+    <value>Desaprobar</value>
+  </data>
+  <data name="DetalleVacaciones" xml:space="preserve">
+    <value>Detalle de vacaciones</value>
+  </data>
+  <data name="DiasDinero" xml:space="preserve">
+    <value>Días en Dinero</value>
+  </data>
+</root>

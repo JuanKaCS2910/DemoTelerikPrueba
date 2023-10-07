@@ -1,0 +1,49 @@
+﻿.Imasoft::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 2.5625rem;
+    top: 44px;
+    bottom: 0;
+    border-left: 1px solid #305590;
+}
+
+.Imasoft > li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #4a78c2;
+    left: 2.4rem;
+    top: calc(50% - 0.3rem);
+    border: 1px solid #333;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.Imasoft > li a:hover:after {
+    border-color: transparent;
+}
+
+.Imasoft > li li > a:after {
+    content: "";
+    display: none;
+}
+
+.Imasoft li a i {
+    margin-left: 0 !important;
+}
+
+.bg-warningH-400 {
+    background-color: #ffca5b;
+}
+
+.bg-successH-200 {
+    background-color: #4de5d5;
+}
+
+.bg-infoH-200 {
+    background-color: #6ab8f7;
+}

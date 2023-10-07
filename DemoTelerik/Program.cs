@@ -1,4 +1,10 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿#region Using
+using DemoTelerik.Modules.Injection;
+using DemoTelerik.Modules.Mapper;
+#endregion
+
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews()
@@ -7,6 +13,15 @@ builder.Services.AddControllersWithViews()
 				.AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver());
 // Add Kendo UI services to the services container"
 builder.Services.AddKendo();
+builder.Services.AddRazorPages();
+
+builder.Services.AddMapper();//Mapper Extensiones
+builder.Services.AddInjection(builder.Configuration);//Injection Extensiones
+
+builder.Services.AddSession(options =>
+{
+	options.IdleTimeout = TimeSpan.FromMinutes(30);
+});
 
 var app = builder.Build();
 
@@ -27,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
 	name: "default",
-	pattern: "{controller=Home}/{action=Index}/{id?}");
+	pattern: "{controller=Account}/{action=Index}/{id?}");
 
 app.Run();

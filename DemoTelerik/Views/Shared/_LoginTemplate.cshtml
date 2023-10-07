@@ -1,0 +1,216 @@
+﻿@using System.Threading
+@using DemoTelerik.Modules;
+
+@{
+    var lang = Thread.CurrentThread.CurrentCulture.Name;
+
+    if (Context.Request.Cookies["lang"] != null)
+    {
+        lang = Context.Request.Cookies["lang"];
+    }
+
+    var ids = IdiomasSitio.Idiomas.FirstOrDefault(o => o.Valor == lang);
+    if (ids == null)
+    {
+        var prefijo = lang.Substring(0, 2);
+        ids = IdiomasSitio.Idiomas.FirstOrDefault(o => o.Valor.StartsWith(prefijo));
+        if (ids == null)
+        {
+            ids = IdiomasSitio.Idiomas.First(o => o.Valor.StartsWith("es-ES"));
+        }
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Grupo ImaSoft RRHH</title>
+    <link rel="icon" type="image/png" href="~/img/Logo/IconoImaSoft.png">
+    <meta name="description" content="Grupo ImaSoft RRHH">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" media="screen, print" href="~/css/vendors.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="~/css/app.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="~/css/site.css">
+    <link rel="stylesheet" media="screen, print" href="~/css/override/override.css">
+    <link rel="stylesheet" media="screen, print" href="~/css/override/OverrideLogin.css">
+    <link rel="stylesheet" media="screen, print" href="~/css/app.bundle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta name="keywords" content="Grupo ImaSoft, Grupo ImaSoft RRHH" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="~/img/favicon/apple-touch-icon.png">
+    <link rel="mask-icon" href="~/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Theme Styles -->
+    @*<link href="@(Url.Content("~/Content/flaticonHumanResources/flaticon.css"))" rel="stylesheet" />*@
+    <link href="@(Url.Content("~/Content/flags/css/flag-icon.min.css"))" rel="stylesheet" />
+
+    <!-- Javascripts -->
+    @*<script src="/Content/assets/plugins/jquery/jquery-2.1.3.min.js"></script>*@
+    <link href="@Url.Content("~/Content/kendo/2021.2.515/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2021.2.515/kendo.common-material.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2021.2.515/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2021.2.515/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2021.2.515/kendo.material.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2021.2.515/kendo.dataviz.material.min.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/kendo/2021.2.515/js/jquery.min.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/kendo/2021.2.515/js/jszip.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2021.2.515/js/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2021.2.515/js/kendo.aspnetmvc.min.js")"></script>
+    <script src="/Scripts/kendo/2021.2.515/js/cultures/kendo.culture.@(Thread.CurrentThread.CurrentCulture.Name).min.js"></script>
+    <script src="/Scripts/kendo/2021.2.515/js/messages/kendo.messages.@(Thread.CurrentThread.CurrentCulture.Name).min.js"></script>
+    <link rel="stylesheet" media="screen, print" href="~/css/fa-brands.css">
+    <partial name="_PartialLoading" />
+    <style>
+
+        .bglogo {
+            background-image: url('/img/Logo/bg.jpg') !important;
+            background-size: 100%;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-brand-gradient {
+            background-color: #c8c7c7;
+        }
+
+        .container-login {
+            width: 100%;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .page-logo-text {
+            text-align: center;
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #fff;
+            font-family: 'Century Gothic';
+        }
+
+        /*.imgdiv {
+            width: 100%;
+            background-image: url('../img/Logo/dispositivosIzquierda.png');
+            background-size: 100% 100%;
+            height:340px;
+        }*/
+
+        /************* Estilos para la contraseña ****************************/
+
+        .show-eye i {
+            position: absolute;
+            transform: translate(-50%);
+            left: 90%;
+            margin-top: -8.0%;
+            cursor: pointer;
+            display: none;
+        }
+
+        .show-eye-slash i {
+            position: absolute;
+            transform: translate(-50%);
+            left: 90%;
+            margin-top: -8.0%;
+            cursor: pointer;
+            display: none;
+        }
+
+        input:valid ~ .show-eye i {
+            display: block;
+        }
+
+        .show-eye-confir i {
+            position: absolute;
+            transform: translate(-50%);
+            left: 90%;
+            margin-top: -8.0%;
+            cursor: pointer;
+            display: none;
+        }
+
+        .show-eye-slash-confir i {
+            position: absolute;
+            transform: translate(-50%);
+            left: 90%;
+            margin-top: -8.0%;
+            cursor: pointer;
+            display: none;
+        }
+
+        input:valid ~ .show-eye-confir i {
+            display: block;
+        }
+    </style>
+</head>
+<body class="gray-bg" style="overflow:hidden;">
+
+    <div class="page-wrapper">
+        <div class="page-inner bg-brand-gradient">
+            <div class="page-content-wrapper bg-transparent m-0">
+
+                @*<div class="height-10 w-100 shadow-lg px-4 bg-brand-gradient">
+                        <div class="d-flex align-items-center container p-0 align-center justify-content-center height-9">
+                            <span class="page-logo-text mr-1">Bienvenido al Portal ImaSoftRH</span>
+                        </div>
+                    </div>*@
+
+                @*<partial name="_PageHeader" />*@
+                <div class="flex-1" style="background: url('/img/svg/pattern-1.svg') no-repeat center bottom fixed; background-size: cover;">
+                    <div class="container py-4 my-lg-5 px-4 px-sm-0">
+                        <div class="row">
+                            @RenderSection("PageHeading", required: false)
+                            @RenderBody()
+                        </div>
+                        <div class="row">
+                            <br />
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-12 col-lg-12 hidden-sm-down">
+                                <div align="center" class="fw-500 text-white">
+                                    <p class="m-t"> <h5>Copyright Grupo ImaSoft &copy; @DateTime.Now.Year</h5> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascripts -->
+
+    <script>
+        function setIdioma(lang) {
+            $.ajax({
+                type: "POST",
+                url: "/Account/Idioma?id=" + lang,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                //async: true,
+                success: function () {
+                    location.reload();
+                }
+            });
+
+        }
+    </script>
+    <partial name="_ColorProfileReference" />
+    <script src="~/js/vendors.bundle.js"></script>
+    <script src="~/js/app.bundle.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/validacionPassword.js"></script>
+</body>
+</html>
