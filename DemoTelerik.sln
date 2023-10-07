@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTelerik", "DemoTelerik\DemoTelerik.csproj", "{AE7C69CC-9693-4F8A-ACF7-76A7A741764D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F6C9222B-E96E-4675-866B-77CA0ACB16AB}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7C69CC-9693-4F8A-ACF7-76A7A741764D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7C69CC-9693-4F8A-ACF7-76A7A741764D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7C69CC-9693-4F8A-ACF7-76A7A741764D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7C69CC-9693-4F8A-ACF7-76A7A741764D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59FC6DA3-CB07-4197-9344-E87B35A8DC8F}
+	EndGlobalSection
+EndGlobal
